@@ -1,4 +1,4 @@
-# Attendance Tracking System using Gait Recognitiom
+# Attendance Tracking System using Gait Recognition
 
 ### Overview
 
