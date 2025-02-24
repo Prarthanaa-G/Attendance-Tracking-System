@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracking System using Gait Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Tracking System using Gait Recognition</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="videoInput" name="video" accept="video/*" required>
+            <br>
+            <div class="button-group">
+                <button type="submit">Upload and Predict</button>
+                <a href="/view_attendance" class="button">View Attendance Records</a>
+            </div>
+        </form>
+        <div class="response" id="response"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+</body>
+</html>
